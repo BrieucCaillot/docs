@@ -1,32 +1,47 @@
 {
 	"$schema": "https://mintlify.com/schema.json",
-	"name": "Starter Kit",
+	"name": "Formance Documentation",
 	"logo": {
 		"dark": "/logo/dark.svg",
 		"light": "/logo/light.svg"
 	},
 	"favicon": "/favicon.svg",
 	"colors": {
-		"primary": "#0D9373",
-		"light": "#07C983",
-		"dark": "#0D9373",
+		"primary": "#ff6423",
+		"light": "#ff6423",
+		"dark": "#ff6423",
 		"anchors": {
-			"from": "#0D9373",
-			"to": "#07C983"
+			"from": "#ff6423",
+			"to": "#ff6423"
+		},
+		"background": {
+			"light": "#ffffff",
+			"dark": "#090014"
 		}
 	},
 	"openapi": ["/openapi.yml"],
+	"versions": ["V2", "V1.10"],
 	"topbarLinks": [
 		{
 			"name": "Support",
-			"url": "mailto:hi@mintlify.com"
+			"url": "https://join.slack.com/t/formance-community/shared_invite/zt-23ta9xg3k-IaPPg6PoKjMwhMGgKYT8TQ"
 		}
 	],
 	"topbarCtaButton": {
-		"name": "Dashboard",
-		"url": "https://dashboard.mintlify.com"
+		"name": "Get started",
+		"url": "https://console.formance.cloud?ref=docs"
 	},
 	"tabs": [
+		{
+			"name": "API Reference V1",
+			"url": "v1/api-reference",
+			"version": "v1"
+		},
+		{
+			"name": "API Reference V2",
+			"url": "v2/api-reference",
+			"version": "v2"
+		},
 		{
 			"name": "API Reference",
 			"url": "api-reference"
@@ -34,25 +49,35 @@
 	],
 	"anchors": [
 		{
-			"name": "Documentation",
-			"icon": "book-open-cover",
-			"url": "https://mintlify.com/docs"
+			"name": "API Reference V1",
+			"url": "v1/api-reference",
+			"version": "v1"
+		},
+		{
+			"name": "API Reference V2",
+			"url": "v2/api-reference",
+			"version": "v2"
+		},
+		{
+			"name": "Website",
+			"icon": "laptop",
+			"url": "https://www.formance.com"
 		},
 		{
 			"name": "Community",
 			"icon": "slack",
-			"url": "https://mintlify.com/community"
+			"url": "https://join.slack.com/t/formance-community/shared_invite/zt-23ta9xg3k-IaPPg6PoKjMwhMGgKYT8TQ"
 		},
 		{
 			"name": "Blog",
 			"icon": "newspaper",
-			"url": "https://mintlify.com/blog"
+			"url": "https://formance.com/blog"
 		}
 	],
 	"navigation": [
 		{
 			"group": "Get Started",
-			"pages": ["introduction", "quickstart", "development"]
+			"pages": ["get-started/introduction", "get-started/install-fctl"]
 		},
 		{
 			"group": "Essentials",
