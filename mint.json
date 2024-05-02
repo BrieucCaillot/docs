@@ -1,91 +1,202 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
-  },
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
-  },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
-    }
-  ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+	"$schema": "https://mintlify.com/schema.json",
+	"name": "Starter Kit",
+	"logo": {
+		"dark": "/logo/dark.svg",
+		"light": "/logo/light.svg"
+	},
+	"favicon": "/favicon.svg",
+	"colors": {
+		"primary": "#0D9373",
+		"light": "#07C983",
+		"dark": "#0D9373",
+		"anchors": {
+			"from": "#0D9373",
+			"to": "#07C983"
+		}
+	},
+	"openapi": ["/openapi.yml"],
+	"topbarLinks": [
+		{
+			"name": "Support",
+			"url": "mailto:hi@mintlify.com"
+		}
+	],
+	"topbarCtaButton": {
+		"name": "Dashboard",
+		"url": "https://dashboard.mintlify.com"
+	},
+	"tabs": [
+		{
+			"name": "API Reference",
+			"url": "api-reference"
+		}
+	],
+	"anchors": [
+		{
+			"name": "Documentation",
+			"icon": "book-open-cover",
+			"url": "https://mintlify.com/docs"
+		},
+		{
+			"name": "Community",
+			"icon": "slack",
+			"url": "https://mintlify.com/community"
+		},
+		{
+			"name": "Blog",
+			"icon": "newspaper",
+			"url": "https://mintlify.com/blog"
+		}
+	],
+	"navigation": [
+		{
+			"group": "Get Started",
+			"pages": ["introduction", "quickstart", "development"]
+		},
+		{
+			"group": "Essentials",
+			"pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation", "essentials/reusable-snippets"]
+		},
+		{
+			"group": "API Documentation",
+			"pages": ["api-reference/introduction"]
+		},
+		{
+			"group": "OpenAPI Reference",
+			"pages": [
+				{
+					"group": "Stack",
+					"pages": ["api-reference/stack/show-stack-version-information"]
+				},
+				{
+					"group": "Auth",
+					"pages": [
+						"api-reference/auth/get-server-info",
+						"api-reference/auth/list-clients",
+						"api-reference/auth/create-client",
+						"api-reference/auth/read-client",
+						"api-reference/auth/update-client",
+						"api-reference/auth/delete-client",
+						"api-reference/auth/add-a-secret-to-a-client",
+						"api-reference/auth/delete-a-secret-from-a-client",
+						"api-reference/auth/add-scope-to-client",
+						"api-reference/auth/delete-scope-from-client",
+						"api-reference/auth/list-scopes",
+						"api-reference/auth/create-scope",
+						"api-reference/auth/read-scope",
+						"api-reference/auth/update-scope",
+						"api-reference/auth/delete-scope",
+						"api-reference/auth/add-a-transient-scope-to-a-scope",
+						"api-reference/auth/delete-a-transient-scope-from-a-scope",
+						"api-reference/auth/list-users",
+						"api-reference/auth/read-user"
+					]
+				},
+				{
+					"group": "Ledger",
+					"pages": [
+						"api-reference/ledger/show-server-information",
+						"api-reference/ledger/get-information-about-a-ledger",
+						"api-reference/ledger/list-accounts-from-a-ledger",
+						"api-reference/ledger/count-the-accounts-from-a-ledger",
+						"api-reference/ledger/get-account-by-its-address",
+						"api-reference/ledger/add-metadata-to-an-account",
+						"api-reference/ledger/get-the-mapping-of-a-ledger",
+						"api-reference/ledger/update-the-mapping-of-a-ledger",
+						"api-reference/ledger/execute-a-numscript",
+						"api-reference/ledger/get-statistics-from-a-ledger",
+						"api-reference/ledger/list-transactions-from-a-ledger",
+						"api-reference/ledger/create-a-new-transaction-to-a-ledger",
+						"api-reference/ledger/count-the-transactions-from-a-ledger",
+						"api-reference/ledger/get-transaction-from-a-ledger-by-its-id",
+						"api-reference/ledger/set-the-metadata-of-a-transaction-by-its-id",
+						"api-reference/ledger/revert-a-ledger-transaction-by-its-id",
+						"api-reference/ledger/create-a-new-batch-of-transactions-to-a-ledger",
+						"api-reference/ledger/get-the-balances-from-a-ledgers-account",
+						"api-reference/ledger/get-the-aggregated-balances-from-selected-accounts",
+						"api-reference/ledger/list-the-logs-from-a-ledger"
+					]
+				},
+				{
+					"group": "Payments",
+					"pages": [
+						"api-reference/payments/get-server-info",
+						"api-reference/payments/list-payments",
+						"api-reference/payments/get-a-payment",
+						"api-reference/payments/update-metadata",
+						"api-reference/payments/list-accounts",
+						"api-reference/payments/list-all-installed-connectors",
+						"api-reference/payments/list-the-configs-of-each-available-connector",
+						"api-reference/payments/install-a-connector",
+						"api-reference/payments/uninstall-a-connector",
+						"api-reference/payments/read-the-config-of-a-connector",
+						"api-reference/payments/reset-a-connector",
+						"api-reference/payments/list-tasks-from-a-connector",
+						"api-reference/payments/read-a-specific-task-of-the-connector",
+						"api-reference/payments/list-transfers-and-their-statuses",
+						"api-reference/payments/transfer-funds-between-connector-accounts",
+						"api-reference/payments/transfer-funds-between-stripe-accounts"
+					]
+				},
+				{
+					"group": "Search",
+					"pages": ["api-reference/search/get-server-info", "api-reference/search/search"]
+				},
+				{
+					"group": "Webhooks",
+					"pages": [
+						"api-reference/webhooks/get-many-configs",
+						"api-reference/webhooks/insert-a-new-config",
+						"api-reference/webhooks/delete-one-config",
+						"api-reference/webhooks/test-one-config",
+						"api-reference/webhooks/activate-one-config",
+						"api-reference/webhooks/deactivate-one-config",
+						"api-reference/webhooks/change-the-signing-secret-of-a-config"
+					]
+				},
+				{
+					"group": "Wallets",
+					"pages": [
+						"api-reference/wallets/get-server-info",
+						"api-reference/wallets/get-apiwalletstransactions",
+						"api-reference/wallets/list-all-wallets",
+						"api-reference/wallets/create-a-new-wallet",
+						"api-reference/wallets/get-a-wallet",
+						"api-reference/wallets/update-a-wallet",
+						"api-reference/wallets/get-wallet-summary",
+						"api-reference/wallets/list-balances-of-a-wallet",
+						"api-reference/wallets/create-a-balance",
+						"api-reference/wallets/get-detailed-balance",
+						"api-reference/wallets/debit-a-wallet",
+						"api-reference/wallets/credit-a-wallet",
+						"api-reference/wallets/get-all-holds-for-a-wallet",
+						"api-reference/wallets/get-a-hold",
+						"api-reference/wallets/confirm-a-hold",
+						"api-reference/wallets/cancel-a-hold"
+					]
+				},
+				{
+					"group": "Flows",
+					"pages": [
+						"api-reference/flows/list-registered-workflows",
+						"api-reference/flows/create-workflow",
+						"api-reference/flows/get-a-flow-by-id",
+						"api-reference/flows/run-workflow",
+						"api-reference/flows/list-instances-of-a-workflow",
+						"api-reference/flows/get-a-workflow-instance-by-id",
+						"api-reference/flows/send-an-event-to-a-running-workflow",
+						"api-reference/flows/cancel-a-running-workflow",
+						"api-reference/flows/get-a-workflow-instance-history-by-id",
+						"api-reference/flows/get-a-workflow-instance-stage-history"
+					]
+				}
+			]
+		}
+	],
+	"footerSocials": {
+		"x": "https://x.com/mintlify",
+		"github": "https://github.com/mintlify",
+		"linkedin": "https://www.linkedin.com/company/mintsearch"
+	}
 }
